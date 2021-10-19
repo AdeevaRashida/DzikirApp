@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    tools:context=".UI.DoaHarianActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDoaHarian"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/bg_menu"
+        android:gravity="bottom"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingBottom="@dimen/_16dp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        android:text="@string/txt_doa_harian"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDoaHarian"
+        tools:listitem="@layout/item_doa"
+        android:id="@+id/rvDoaHarian"/>
+
+</RelativeLayout>

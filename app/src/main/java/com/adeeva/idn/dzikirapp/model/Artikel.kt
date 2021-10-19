@@ -1,4 +1,4 @@
-package com.adeeva.idn.dzikirapp
+package com.adeeva.idn.dzikirapp.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.adeeva.idn.dzikirapp">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DzikirApp">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SplashActivity"
+        android:theme="@style/Theme.DzikirApp"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name="com.adeeva.idn.dzikirapp.ui.detail.DzikirPetangActivity"
+            android:theme="@style/PetangActivity" />
+        <activity
+            android:name="com.adeeva.idn.dzikirapp.ui.detail.DzikirPagiActivity"
+            android:theme="@style/PagiActivity" />
+        <activity
+            android:name="com.adeeva.idn.dzikirapp.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +26,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.adeeva.idn.dzikirapp.ui.detail.DetailArtikelActivity"
+            android:parentActivityName="com.adeeva.idn.dzikirapp.MainActivity" />
+        <activity android:name="com.adeeva.idn.dzikirapp.UI.QauliyahActivity" />
+        <activity android:name="com.adeeva.idn.dzikirapp.UI.DoaHarianActivity" />
+        <activity android:name=".UI.DzikirSetiapSaatActivity" />
+        <activity android:name=".UI.DzikirPagiPetangActivity" />
+        <activity
+            android:name="com.adeeva.idn.dzikirapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

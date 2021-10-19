@@ -1,4 +1,4 @@
-package com.adeeva.idn.dzikirapp
+package com.adeeva.idn.dzikirapp.model
 
 object DataDzikirDoa {
     private val descQauliyah = arrayOf(
